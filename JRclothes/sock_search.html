@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>The sock shop - Find your pair now!</title>
+    <a href="#maincontent" class="skip-link" >Skip to main content</a><br>
+	<a href="index.php">
+    <img src="main.png" alt="logo"></a>
+	<link rel="stylesheet" href="mystyles.css">
+    <script src = "sock_search.js" defer>
+    </script>
+    
+</head>
+<body>
+    <br>
+    <main id="maincontent" tabindex="-1">
+       <nav>
+           <ul id="nav">
+               <li><a href="about.html">About us</a></li>
+               <li><a href="shop.html">Shop</a></li>
+               <li><a href="reviews.html">Reviews</a></li> 
+               <li><a href="contact.html">Contact us</a></li>
+               <li><a href="index.php">LOGIN/SIGN UP</a></li>
+           </ul>
+       </nav>
+       <br>
+    <h1>Search for an item here:</h1>
+    <form action="/action_page.php" id="SearchSocks">
+        <label for="colours">Choose your colour:</label>
+        <select name="colours" id="colours">
+          <option value="Blue">Blue</option>
+          <option value="Red">Red</option>
+          <option value="Yellow">Yellow</option>
+          <option value="White">White</option>
+          <option value="Pink">Pink</option>
+          <option value="Black">Black</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <label for="size">Choose your size:</label>
+            <select name="size" id="size">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Select gender:</legend>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="Unisex" name="gender" value="Unisex">
+            <label for="Unisex">Unisex</label>
+            <br>
+            <button type="button" id="Submitbtn">Search</button>
+        </fieldset>
+    </form>
+</body>
+</html>
